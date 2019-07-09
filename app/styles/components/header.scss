@@ -1,5 +1,102 @@
 .header {
-    background-color: #472424;
-    color: #9acd32;
-    height: 50px;
+    .header-top {
+        background: $dark-bg;
+        .top-block {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+
+            line-height: 16px;
+            .support {
+                display: flex;
+                flex-direction: row;
+                // padding: 17px 0;
+                li {
+                    padding: 0 20px;
+                    a:hover {
+                        color: $pink;
+                    }
+                }
+
+                li:first-child {
+                    padding-left: 0;
+                }
+            }
+
+            .users {
+                display: flex;
+                flex-direction: row;
+                li {
+                    border-left: 1px solid rgba(255, 255, 255, 0.1);
+                    padding: 17px 20px;
+                }
+
+                li:hover {
+                    background-color: $pink;
+                }
+
+                .my-goods {
+                    border-left: 0;
+                    padding: 17px 80px 17px 42px;
+                    position: relative;
+                    a:before {
+                        background: url('../images/my-goods.png') 0 0;
+                        content: '';
+                        height: 20px;
+                        left: 16px;
+                        position: absolute;
+                        top: 13px;
+                        width: 20px;
+                    }
+
+                    a:after {
+                        color: #dcc5b8;
+                        content: '4 Items';
+                        position: absolute;
+                        right: 23px;
+                        top: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-main {
+        background-color: $light-bg;
+        .bottom-block {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+
+            .logo {
+                background: url('../images/logo.png') center no-repeat;
+                height: 35px;
+                width: 20%;
+            }
+
+            .menu {
+                display: flex;
+                flex-direction: row;
+                li {
+                    border-bottom: 4px solid $light-bg;
+                    color: $text;
+                    font-size: 16px;
+                    line-height: 26px;
+                    padding: 23px 20px;
+                }
+
+                li:last-child {
+                    padding-right: 0;
+                }
+
+                li:hover {
+                    border-bottom: 4px solid $pink;
+                }
+
+                a:hover {
+                    color: $pink;
+                }
+            }
+        }
+    }
 }
