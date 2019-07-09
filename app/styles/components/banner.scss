@@ -1,5 +1,60 @@
 .banner {
     background-color: #f0efee;
-    padding: 50px 0;
-    text-align: center;
+    padding: 135px 80px 125px 570px;
+    position: relative;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        // .bg-banner {
+        //     width: 570px;
+        //     height: 730px;
+        //     background: url('../img/bd-banner.png') ;
+        //     z-index: 5;
+        // }
+
+        .text-banner {
+            width: 49%;
+            // padding-left: 570px;
+            position: relative;
+            span {
+                color: $light-bg;
+                font-size: 30px;
+            }
+
+            h1 {
+                color: $light-bg;
+                font-family: 'TruenoUltBlk';
+                font-size: 70px;
+            }
+
+            h3 {
+                color: $pink;
+                font-family: 'TruenoUltBlk';
+                font-size: 50px;
+            }
+
+            p {
+                color: $title;
+                font-size: 16px;
+                line-height: 26px;
+            }
+
+            button {
+                background-color: $pink;
+            }
+        }
+
+        .text-banner:before {
+            content: '';
+            position: absolute;
+            background: url('../image/bg-banner.png') center;
+            width: 970px;
+            height: 730px;
+            top: -160px;
+            left: -477px;
+            z-index: 5;
+        }
+    }
 }
