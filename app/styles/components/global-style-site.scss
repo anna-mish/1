@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: $black;
+    font-family: 'Trueno';
+    font-size: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+    // padding-left: 30px;
+    // padding-right: 30px;
+}
+
+a {
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+.btn {
+    @include button-reset;
+    @include btn-style;
+}
+
+.btn:hover {
+    background-color: #f5f5f5;
+    border: 1px solid $black;
+    color: $black;
+}

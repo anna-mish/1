@@ -1,0 +1,8 @@
+.banner {
+    background: url('../images/banner-bg.png') center no-repeat/cover;
+    padding: 95px 0;
+    text-align: center;
+    .banner-text {
+        @include banner-text;
+    }
+}

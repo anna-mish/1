@@ -1,0 +1,33 @@
+.header {
+    background-color: #472424;
+    color: #9acd32;
+    height: 50px;
+    .logo {
+        @include logo;
+
+        //--component breakpoints start
+        @include large {
+            //transform: scale(4);
+        }
+
+        @include medium {
+            //transform: scale(6);
+        }
+        //--component breakpoints end
+    }
+
+    .truenolt {
+        font-family: 'Trueno';
+        font-size: 16px;
+    }
+
+    .truenobd {
+        font-family: 'TruenoBd';
+        font-size: 16px;
+    }
+
+    .truenoult {
+        font-family: 'TruenoUltBlk';
+        font-size: 50px;
+    }
+}
