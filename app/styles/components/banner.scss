@@ -1,60 +1,77 @@
 .banner {
     background-color: #f0efee;
-    padding: 135px 80px 125px 570px;
-    position: relative;
-    .container {
+    padding-top: 135px;
+    .arrival {
         display: flex;
-        justify-content: space-between;
-        position: relative;
-
-        // .bg-banner {
-        //     width: 570px;
-        //     height: 730px;
-        //     background: url('../img/bd-banner.png') ;
-        //     z-index: 5;
-        // }
+        justify-content: flex-end;
+        .bg-banner {
+            margin-left: -535px;
+            margin-top: -175px;
+            padding-right: 70px;
+            width: 86%;
+        }
 
         .text-banner {
+            padding-right: 80px;
             width: 49%;
-            // padding-left: 570px;
-            position: relative;
             span {
                 color: $light-bg;
+                display: block;
                 font-size: 30px;
+                margin-bottom: 15px;
             }
 
             h1 {
                 color: $light-bg;
                 font-family: 'TruenoUltBlk';
                 font-size: 70px;
+                margin-bottom: 20px;
             }
 
             h3 {
                 color: $pink;
                 font-family: 'TruenoUltBlk';
                 font-size: 50px;
+                margin-bottom: 30px;
             }
 
             p {
                 color: $title;
                 font-size: 16px;
                 line-height: 26px;
+                margin-bottom: 30px;
             }
 
-            button {
+            .btn {
                 background-color: $pink;
+                border: 0;
+                color: $text;
+                cursor: pointer;
+                font-family: 'TruenoBd';
+                font-size: 16px;
+                line-height: 26px;
+                outline: none;
+                padding: 11px 46px;
+                text-transform: uppercase;
             }
-        }
-
-        .text-banner:before {
-            content: '';
-            position: absolute;
-            background: url('../image/bg-banner.png') center;
-            width: 970px;
-            height: 730px;
-            top: -160px;
-            left: -477px;
-            z-index: 5;
         }
     }
+}
+
+.test {
+    border: 3px solid #f00;
+    color: #000;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.test:before {
+    background: url('../image/bg-banner.png');
+    content: '';
+    height: 727px;
+    left: -430px;
+    position: absolute;
+    top: -175px;
+    width: 969px;
 }
