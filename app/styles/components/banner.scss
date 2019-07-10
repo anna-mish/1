@@ -44,27 +44,9 @@
 
             .btn {
                 @include btn-style;
-                background-color: $pink; 
-                padding: 11px 46px; 
+                background-color: $pink;
+                padding: 11px 46px;
             }
         }
     }
-}
-
-.test {
-    border: 3px solid #f00;
-    color: #000;
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-}
-
-.test:before {
-    background: url('../image/bg-banner.png');
-    content: '';
-    height: 727px;
-    left: -430px;
-    position: absolute;
-    top: -175px;
-    width: 969px;
 }
