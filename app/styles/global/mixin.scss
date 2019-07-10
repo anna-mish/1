@@ -1,0 +1,11 @@
+@mixin btn-style {  
+    color: $text; 
+    font-family: 'TruenoBd';
+    font-size: 16px;
+    line-height: 26px; 
+    padding: 11px 29px;
+    text-transform: uppercase;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}

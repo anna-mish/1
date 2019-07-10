@@ -43,16 +43,9 @@
             }
 
             .btn {
-                background-color: $pink;
-                border: 0;
-                color: $text;
-                cursor: pointer;
-                font-family: 'TruenoBd';
-                font-size: 16px;
-                line-height: 26px;
-                outline: none;
-                padding: 11px 46px;
-                text-transform: uppercase;
+                @include btn-style;
+                background-color: $pink; 
+                padding: 11px 46px; 
             }
         }
     }
