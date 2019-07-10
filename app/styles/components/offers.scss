@@ -36,24 +36,61 @@
             }
 
             .small-blocks {
+                color: $text;
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
-                color: $text;
                 .for-athletes {
                     background-color: #2d2f2e;
+                    position: relative;
                     width: 47%;
                     img {
                         width: 100%;
+                    }
+
+                    h3 {
+                        bottom: 50px;
+                        color: $text;
+                        font-size: 30px;
+                        left: 50%;
+                        position: absolute;
+                        text-align: center;
+                        transform: translateX(-50%);
+                        span {
+                            color: $pink;
+                            font-family: 'TruenoBd';
+                            text-transform: uppercase;
+                        }
                     }
                 }
 
                 .premium {
                     background-color: #cecece;
                     width: 47%;
+                    position: relative;
                     img {
+                         
+                        left: 0;
+                        position: relative;
+                        top: auto;
+                        bottom: 0;
                         width: 100%;
                     }
+                    h3 {
+                        bottom: 50px;
+                        color: #6b7072;
+                        font-size: 30px;
+                        left: 50%;
+                        position: absolute;
+                        text-align: center;
+                        transform: translateX(-50%);
+                        span {
+                            color: $text;
+                            font-family: 'TruenoBd';
+                            text-transform: uppercase;
+                        }
+                    }
+                     
                 }
             }
         }
