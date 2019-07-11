@@ -1,21 +1,9 @@
-@mixin font {
-    font-family: $font_lt;
-    font-size: 16px;
-    color: $text;
-}
-@mixin font13{
-    font-family: $font_lt;
-    font-size: 13px; 
-    color: $text;
-}
-
-@mixin fontbd {
-    font-family: $font_bd;
-}
-
-@mixin fontblk {
-    font-family: $font_blk;
-}
+@mixin font($font-family: $font_lt, $size: $fs, $color: $text) {  
+    font-family: $font-family;
+    font-size: $size;
+    color: $color;
+  }
+  
 
 @mixin btn-style {
     color: $text;
