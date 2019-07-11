@@ -1,0 +1,10 @@
+@mixin font {
+    font-family: 'Trueno';
+    font-size: 16px;
+    color: $text;
+}
+@mixin font13{
+    font-family: 'Trueno';
+    font-size: 13px; 
+    color: $text;
+}

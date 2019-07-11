@@ -5,12 +5,10 @@
             align-items: center;
             display: flex;
             justify-content: space-between;
-
-            line-height: 16px;
+            @include font13;
             .support {
                 display: flex;
                 flex-direction: row;
-                // padding: 17px 0;
                 li {
                     padding: 0 20px;
                     a:hover {
@@ -26,35 +24,32 @@
             .users {
                 display: flex;
                 flex-direction: row;
-                li {
-                    border-left: 1px solid rgba(255, 255, 255, 0.1);
-                    padding: 17px 20px;
-                }
-
-                li:hover {
+                justify-content: center;
+                    a {
+                        padding: 18px 20px;
+                        border-left: 1px solid rgba(255, 255, 255, 0.1);
+                    }
+                a:hover {
                     background-color: $pink;
                 }
 
                 .my-goods {
                     border-left: 0;
-                    padding: 17px 80px 17px 42px;
+                    padding: 18px 20px 18px 42px;
                     position: relative;
-                    a:before {
+                    &:before {
                         background: url('../images/my-goods.png') 0 0;
                         content: '';
                         height: 20px;
-                        left: 16px;
+                        left: 11px;
                         position: absolute;
                         top: 13px;
                         width: 20px;
                     }
 
-                    a:after {
-                        color: #dcc5b8;
-                        content: '4 Items';
-                        position: absolute;
-                        right: 23px;
-                        top: 17px;
+                    span{
+                        color: #dcc5b8; 
+                        padding-left: 10px; 
                     }
                 }
             }
@@ -77,24 +72,15 @@
             .menu {
                 display: flex;
                 flex-direction: row;
-                li {
-                    border-bottom: 4px solid $light-bg;
-                    color: $text;
-                    font-size: 16px;
-                    line-height: 26px;
-                    padding: 23px 20px;
+                a {
+                    @include font;
+                    border-bottom: 4px solid $light-bg; 
+                    padding: 27px 20px;
                 }
-
-                li:last-child {
-                    padding-right: 0;
-                }
-
-                li:hover {
-                    border-bottom: 4px solid $pink;
-                }
-
+                
                 a:hover {
                     color: $pink;
+                    border-bottom: 4px solid $pink;
                 }
             }
         }
