@@ -1,25 +1,25 @@
 @mixin font {
-    font-family: 'Trueno';
+    font-family: $font_lt;
     font-size: 16px;
     color: $text;
 }
 @mixin font13{
-    font-family: 'Trueno';
+    font-family: $font_lt;
     font-size: 13px; 
     color: $text;
 }
 
 @mixin fontbd {
-    font-family: 'TruenoBd';
+    font-family: $font_bd;
 }
 
 @mixin fontblk {
-    font-family: 'TruenoUltBlk';
+    font-family: $font_blk;
 }
 
 @mixin btn-style {
     color: $text;
-    @include fontbd;
+    font-family: $font_bd;
     font-size: 16px; 
     padding: 14px 29px;
     text-transform: uppercase;
