@@ -66,16 +66,16 @@
 
                 .premium {
                     background-color: #cecece;
-                    width: 47%;
                     position: relative;
+                    width: 47%;
                     img {
-                         
+                        bottom: 0;
                         left: 0;
                         position: relative;
                         top: auto;
-                        bottom: 0;
                         width: 100%;
                     }
+
                     h3 {
                         bottom: 50px;
                         color: #6b7072;
@@ -90,7 +90,6 @@
                             text-transform: uppercase;
                         }
                     }
-                     
                 }
             }
         }
