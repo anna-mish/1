@@ -1,9 +1,14 @@
+@mixin fontbd {
+    font-family: 'TruenoBd';
+}
+@mixin fontblk {
+    font-family: 'TruenoUltBlk';
+}
 @mixin btn-style {
     color: $text;
-    font-family: 'TruenoBd';
-    font-size: 16px;
-    line-height: 26px;
-    padding: 11px 29px;
+    @include fontbd;
+    font-size: 16px; 
+    padding: 14px 29px;
     text-transform: uppercase;
     border: 0;
     outline: none;

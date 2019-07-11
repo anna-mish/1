@@ -12,8 +12,7 @@
         }
 
         .text-banner {
-            padding-right: 80px;
-            width: 49%;
+            width: 47%;
             span {
                 color: $light-bg;
                 display: block;
@@ -23,14 +22,14 @@
 
             h1 {
                 color: $light-bg;
-                font-family: 'TruenoUltBlk';
+                @include fontblk;
                 font-size: 70px;
                 margin-bottom: 20px;
             }
 
             h3 {
                 color: $pink;
-                font-family: 'TruenoUltBlk';
+                @include fontblk;
                 font-size: 50px;
                 margin-bottom: 30px;
             }
@@ -38,14 +37,15 @@
             p {
                 color: $title;
                 font-size: 16px;
-                line-height: 26px;
+                line-height: 1.5;
                 margin-bottom: 30px;
             }
 
             .btn {
                 @include btn-style;
                 background-color: $pink;
-                padding: 11px 46px;
+                padding-left: 46px;
+                padding-left: 46px;
             }
         }
     }
