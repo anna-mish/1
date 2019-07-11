@@ -2,92 +2,113 @@
     padding: 50px 0 95px 0;
     .in-offerrs {
         display: flex;
+        height: 540px;
         justify-content: space-between;
         .left-side {
-            background-color: #000;
-            height: 540px;
+            background: url('../images/left-side_bg.png');
+            position: relative;
             width: 48.6%;
-            img {
-                width: 100%;
+            .logo_small {
+                left: 20px;
+                position: absolute;
+                top: 28px;
+                width: 15%;
+            }
+
+            .left-side-top {
+                text-align: center;
+                h3 {
+                    @include font($size: 30px);
+                    padding: 45px 0 335px;
+                    text-align: center;
+                    span {
+                        @include span;
+                        color: #4bd8cd;
+                    }
+                }
+
+                .btn {
+                    @include btn-style;
+                    background-color: #4bd8cd;
+                }
             }
         }
 
         .left-side:before {
-            background: url('../i');
+            background: url('../images/bg-nike_part.png');
             content: '';
             height: 55px;
+            left: -12px;
+            position: absolute;
+            top: 226px;
             width: 29px;
         }
 
         .right-side {
             display: flex;
             flex-direction: column;
-            height: 540px;
             width: 48.6%;
-
-            // padding-left: 30px;
-            .new-arrival {
+            .new-arrivals {
                 background-color: $pink;
+                height: 47.3%;
                 margin-bottom: 30px;
+                padding-left: 150px;
+                position: relative;
+                text-align: center;
                 width: 100%;
-                img {
-                    margin-left: -20px;
+                h3 {
+                    @include font($size: 30px);
+                    padding: 55px 0 25px;
+                    span {
+                        @include span;
+                    }
                 }
+
+                .btn {
+                    @include btn-style;
+                    background-color: $light-bg;
+                }
+            }
+
+            .new-arrivals:before {
+                background: url('../images/arrivals-element.png');
+                content: '';
+                height: 277px;
+                left: -15px;
+                position: absolute;
+                top: -22px;
+                width: 207px;
             }
 
             .small-blocks {
                 color: $text;
                 display: flex;
+                height: 47.3%;
                 justify-content: space-between;
-                width: 100%;
                 .for-athletes {
-                    background-color: #2d2f2e;
-                    position: relative;
-                    width: 47%;
-                    img {
-                        width: 100%;
-                    }
-
+                    background: url('../images/athletes-bg.png');
+                    width: 47.3%;
+                    @include font($size: 30px);
                     h3 {
-                        bottom: 50px;
-                        color: $text;
-                        font-size: 30px;
-                        left: 50%;
-                        position: absolute;
+                        padding-top: 145px;
                         text-align: center;
-                        transform: translateX(-50%);
                         span {
+                            @include span;
                             color: $pink;
-                            font-family: 'TruenoBd';
-                            text-transform: uppercase;
                         }
                     }
                 }
 
                 .premium {
-                    background-color: #cecece;
-                    position: relative;
-                    width: 47%;
-                    img {
-                        bottom: 0;
-                        left: 0;
-                        position: relative;
-                        top: auto;
-                        width: 100%;
-                    }
-
+                    background: url('../images/premium-bg.png') 0 0 no-repeat;
+                    width: 47.3%;
+                    @include font($size: 30px, $color: #6b7072);
                     h3 {
-                        bottom: 50px;
-                        color: #6b7072;
-                        font-size: 30px;
-                        left: 50%;
-                        position: absolute;
+                        padding-top: 40px;
                         text-align: center;
-                        transform: translateX(-50%);
                         span {
+                            @include span;
                             color: $text;
-                            font-family: 'TruenoBd';
-                            text-transform: uppercase;
                         }
                     }
                 }
