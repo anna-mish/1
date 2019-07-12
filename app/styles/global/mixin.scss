@@ -1,17 +1,23 @@
-@mixin font($font-family: $font_lt, $size: $fs, $color: $text) {  
+@mixin font($font-family: $font_lt, $size: $fs, $color: $text) {
     font-family: $font-family;
     font-size: $size;
     color: $color;
-  }
-  
+}
 
 @mixin btn-style {
     color: $text;
     font-family: $font_bd;
-    font-size: $fs; 
+    font-size: $fs;
     padding: 14px 29px;
     text-transform: uppercase;
     border: 0;
     outline: none;
     cursor: pointer;
+}
+
+@mixin span {
+    display: block;
+    font-family: $font_bd;
+    padding-top: 10px;
+    text-transform: uppercase;
 }
