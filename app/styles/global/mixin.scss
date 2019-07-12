@@ -14,3 +14,10 @@
     outline: none;
     cursor: pointer;
 }
+
+@mixin span {
+    display: block;
+    font-family: $font_bd;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
