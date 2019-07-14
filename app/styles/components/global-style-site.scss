@@ -17,10 +17,10 @@ html {
 }
 
 a {
+    color: $text;
     cursor: pointer;
     display: block;
     text-decoration: none;
-    color: $text;
 }
 
 a:hover,
