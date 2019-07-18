@@ -1,0 +1,53 @@
+.banner {
+    background-color: #f0efee;
+    padding-top: 135px;
+    .arrival {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .bg-banner {
+        margin-left: -535px;
+        margin-top: -175px;
+        padding-right: 70px;
+        width: 86%;
+    }
+
+    .text-banner {
+        width: 47%;
+        span {
+            color: $light-bg;
+            display: block;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: $light-bg;
+            font-family: $font_blk;
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: $pink;
+            font-family: $font_blk;
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: $title;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+    }
+
+    .btn {
+        @include btn-style;
+        background-color: $pink;
+        padding-left: 46px;
+        padding-left: 46px;
+    }
+}
