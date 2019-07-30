@@ -3,17 +3,25 @@
         display: flex;
         justify-content: center;
         margin-bottom: 50px;
+
         a {
             display: inline-block;
             padding: 0 20px;
             text-transform: uppercase;
-            @include font($font-family: $font_lt, $size: 30px, $color: $subtitle);
+            @include font(
+                $font-family: $font_lt,
+                $size: 30px,
+                $color: $subtitle
+            );
+
+            @at-root #tabs .current a,
             &:hover {
                 color: $light-bg;
                 font-family: $font_bd;
             }
         }
-    }  
+    }
+
     #content {
         color: #000;
         #tab1 {
@@ -21,11 +29,12 @@
             flex-wrap: wrap;
             justify-content: space-between;
         }
+
         .sneakers {
-            width: 23%;
+            border: 1px solid #e0dfde;
             height: 350px;
-            border: 1px solid #e0dfde; 
             margin-bottom: 30px;
+            width: 23%;
         }
-    } 
+    }
 }
