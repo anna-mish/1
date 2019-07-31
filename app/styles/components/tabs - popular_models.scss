@@ -15,7 +15,7 @@
             );
 
             @at-root #tabs .current a,
-            &:hover {
+                &:hover {
                 color: $light-bg;
                 font-family: $font_bd;
             }
@@ -24,17 +24,61 @@
 
     #content {
         color: #000;
-        #tab1 {
+        #tab1, #tab2, #tab3 {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
 
         .sneakers {
+            position: relative;
             border: 1px solid #e0dfde;
             height: 350px;
             margin-bottom: 30px;
-            width: 23%;
+            padding: 25px;
+            width: 23%; 
+            text-align: center;
+            display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            .price {
+                position: absolute;
+                top: 25px;
+                left: 25px;
+                @include font( 
+                    $size: 24px,
+                    $color: $pink
+                );
+            }
+            .sale-price {
+                position: absolute;
+                top: 60px;
+                left: 25px;
+                text-decoration: line-through;
+                @include font(  
+                    $color: $title
+                );
+            }
+            .discount {
+                position: absolute;
+                top: 20px;
+                right: 0;
+                background-color: $pink;
+                @include font ( $font-family: $font_bd); 
+                padding: 3px 10px;
+            }
+            .description {
+                color: $title;
+                line-height: 1.5;
+                text-align: left;   
+                h3 {
+                    text-transform: uppercase;
+                    font-family: $font_bd;
+                }
+                .number-id {
+                    @include font($size: $fs-small, $color: $subtitle)
+                }
+            }
         }
     }
 }
