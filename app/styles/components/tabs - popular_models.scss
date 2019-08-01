@@ -24,59 +24,71 @@
 
     #content {
         color: #000;
-        #tab1, #tab2, #tab3 {
+        #tab1,
+        #tab2,
+        #tab3 {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
 
         .sneakers {
-            position: relative;
             border: 1px solid #e0dfde;
+            display: flex;
+            flex-direction: column;
             height: 350px;
+            justify-content: flex-end;
             margin-bottom: 30px;
             padding: 25px;
-            width: 23%; 
-            text-align: center;
-            display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
+            position: relative; 
+            width: 23%;
             .price {
+                left: 25px;
+                line-height: 1.5;
                 position: absolute;
+                @include font($size: 24px, $color: $pink);
                 top: 25px;
-                left: 25px;
-                @include font( 
-                    $size: 24px,
-                    $color: $pink
-                );
             }
+
             .sale-price {
-                position: absolute;
-                top: 60px;
                 left: 25px;
-                text-decoration: line-through;
-                @include font(  
-                    $color: $title
-                );
-            }
-            .discount {
+                line-height: 1.5;
                 position: absolute;
-                top: 20px;
-                right: 0;
-                background-color: $pink;
-                @include font ( $font-family: $font_bd); 
-                padding: 3px 10px;
+                text-decoration: line-through;
+                @include font($color: $title);
+                top: 60px;
             }
+
+            .discount {
+                background-color: $pink;
+                padding: 3px 10px;
+                position: absolute;
+                right: 0;
+                @include font($font-family: $font_bd);
+                top: 20px;
+            }
+
+            .sneakers-pic {
+                height: 235px;
+                overflow: hidden;
+                padding-top: 50px;
+                text-align: center;
+                max-width: 100%; 
+                img {
+                    max-width: 100%;
+                }
+            }
+
             .description {
                 color: $title;
                 line-height: 1.5;
-                text-align: left;   
                 h3 {
-                    text-transform: uppercase;
                     font-family: $font_bd;
+                    text-transform: uppercase;
                 }
+
                 .number-id {
-                    @include font($size: $fs-small, $color: $subtitle)
+                    @include font($size: $fs-small, $color: $subtitle);
                 }
             }
         }
