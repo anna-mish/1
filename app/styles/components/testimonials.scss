@@ -1,0 +1,24 @@
+.testimonials {
+    .inner-test {
+        background: $dark-bg url('../images/light_bg.png') center no-repeat;
+        // height: 570px;
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    .user-block {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        // width: 60%;
+        // .user-review {
+
+        // }
+
+        .user-opinion {
+            background: url('../images/star-small.png') center;
+            height: 20px;
+            width: 100%;
+        }
+    }
+}
