@@ -3,6 +3,9 @@
 
     padding: 100px 0;
     text-align: center;
+    @include small {
+        padding: 60px 20px;
+    }
      
     .user-block {
         display: flex;
@@ -11,12 +14,12 @@
         .user-review {
             padding: 0 25px;
             text-align: center;
-            // opacity: 0.1;
+            opacity: 0.1;
         }
 
-        // .user-review:hover {
-        //     opacity: 1;
-        // }
+        .user-review:hover {
+            opacity: 1;
+        }
 
         .user-name {
             @include font($font-family: $font_bd);
@@ -49,16 +52,20 @@
         overflow: auto;
         padding: 50px;
         position: relative;
+        @include small {
+            padding: 20px;
+        }
         &:before {
             border-bottom: 20px solid rgba(255, 255, 255, 0.1);
             border-left: 20px solid transparent;
             border-right: 20px solid transparent;
             content: '';
             display: block;
-            left: 560px;
+            left: 50%;
             position: absolute;
             top: -21px;
             width: 0;
-        }
+        } 
     }
+   
 }
