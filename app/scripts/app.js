@@ -16,4 +16,6 @@ const onPageLoaded = () => {
     $('#tabs li:first').click();
 };
 
+initTabs('#content','#tabs');
+
 $(document).ready(onPageLoaded);
