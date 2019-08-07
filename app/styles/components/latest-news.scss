@@ -1,0 +1,21 @@
+.latest-news {
+    padding: 100px 0;
+    h3 {
+        padding-bottom: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        @include font($font-family: $font_bd, $size: 30px, $color: $light-bg);
+    }
+
+    .new-block {
+        display: flex;
+        justify-content: space-between;
+        &-item {
+            background-color: #472424;
+            background-image: linear-gradient(45deg,  #472424 0%,  rgba(71, 36, 36, 0) 100%);
+            border: 1px solid #e0dfde;
+            height: 350px;
+            width: 350px;
+        }
+    }
+}
