@@ -1,6 +1,12 @@
 .latest-news {
     padding: 100px 0;
-    h3 {
+    @include small {
+        padding: 40px 0;
+    }
+    @include medium {
+        padding: 60px 0;
+    }
+    .block-name {
         padding-bottom: 50px;
         text-align: center;
         text-transform: uppercase;
@@ -10,12 +16,53 @@
     .new-block {
         display: flex;
         justify-content: space-between;
-        &-item {
+        @include small {
+            flex-direction: column;
+            align-items: center;
+             
+        }
+        .new-item {
             background-color: #472424;
-            background-image: linear-gradient(45deg,  #472424 0%,  rgba(71, 36, 36, 0) 100%);
-            border: 1px solid #e0dfde;
-            height: 350px;
-            width: 350px;
+            position: relative;
+            width: 31.5%;
+            @include small {
+                width: 60%; 
+                margin-bottom: 30px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+
+        .description-new {
+            bottom: 20px;
+            left: 30px;
+            position: absolute;
+            width: 63%;
+            .dates {
+                @include font($font-family: $font_bd);
+                line-height: 2;
+            }
+
+            .new-title {
+                line-height: 1.5;
+            }
+
+            .comments {
+                @include font($size: $fs-small, $color: $pink);
+                line-height: 2;
+                padding-left: 25px;
+                position: relative;
+                &::before {
+                    background: url('../images/icon-messages.png');
+                    content: '';
+                    height: 20px;
+                    left: 0;
+                    position: absolute;
+                    top: 6px;
+                    width: 20px;
+                }
+            }
         }
     }
 }
