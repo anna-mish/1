@@ -3,10 +3,10 @@
 
     padding: 100px 0;
     text-align: center;
+
     @include small {
         padding: 60px 20px;
     }
-     
     .user-block {
         display: flex;
         justify-content: center;

@@ -1,0 +1,96 @@
+.popular_models {
+    #tabs {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        a {
+            display: inline-block;
+            padding: 0 20px;
+            text-transform: uppercase;
+            @include font(
+                $font-family: $font_lt,
+                $size: 30px,
+                $color: $subtitle
+            );
+
+            @at-root #tabs .current a,
+                &:hover {
+                color: $light-bg;
+                font-family: $font_bd;
+            }
+        }
+    }
+
+    #content {
+        color: #000;
+        #tab1,
+        #tab2,
+        #tab3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .sneakers {
+            border: 1px solid #e0dfde;
+            display: flex;
+            flex-direction: column;
+            height: 350px;
+            justify-content: flex-end;
+            margin-bottom: 30px;
+            padding: 25px;
+            position: relative;
+            width: 23%;
+            .price {
+                left: 25px;
+                line-height: 1.5;
+                position: absolute;
+                @include font($size: 24px, $color: $pink);
+                top: 25px;
+            }
+
+            .sale-price {
+                left: 25px;
+                line-height: 1.5;
+                position: absolute;
+                text-decoration: line-through;
+                @include font($color: $title);
+                top: 60px;
+            }
+
+            .discount {
+                background-color: $pink;
+                padding: 3px 10px;
+                position: absolute;
+                right: 0;
+                @include font($font-family: $font_bd);
+                top: 20px;
+            }
+
+            .sneakers-pic {
+                height: 235px;
+                max-width: 100%;
+                overflow: hidden;
+                padding-top: 50px;
+                text-align: center;
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .description {
+                color: $title;
+                line-height: 1.5;
+                h3 {
+                    font-family: $font_bd;
+                    text-transform: uppercase;
+                }
+
+                .number-id {
+                    @include font($size: $fs-small, $color: $subtitle);
+                }
+            }
+        }
+    }
+}
