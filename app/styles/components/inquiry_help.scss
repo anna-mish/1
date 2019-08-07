@@ -4,19 +4,20 @@
     @include small {
         padding: 40px 0;
     }
+
     .inner-help {
+        align-items: center;
         display: flex;
         justify-content: space-between;
-        align-items: center;
         @include small {
+            align-items: center;
             display: flex;
             flex-direction: column;
-            align-items: center;
         }
-    } 
+    }
 
     .block-question {
-        padding-left: 90px; 
+        padding-left: 90px;
         position: relative;
         &::before {
             background: url('../images/icon-letter.png');
@@ -27,15 +28,17 @@
             top: 10px;
             width: 60px;
         }
+
         .question {
-            text-transform: uppercase;
-            @include font ($font-family: $font_bd, $size: 30px);
             padding-bottom: 10px;
+            @include font($font-family: $font_bd, $size: 30px);
+            text-transform: uppercase;
         }
     }
-    .btn-help{
+
+    .btn-help {
         @include btn-style;
-        background-color: $light-bg; 
+        background-color: $light-bg;
         @include small {
             margin-top: 40px;
         }
