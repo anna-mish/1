@@ -3,9 +3,11 @@
     @include small {
         padding: 40px 0;
     }
+
     @include medium {
         padding: 60px 0;
     }
+
     .block-name {
         padding-bottom: 50px;
         text-align: center;
@@ -17,18 +19,19 @@
         display: flex;
         justify-content: space-between;
         @include small {
-            flex-direction: column;
             align-items: center;
-             
+            flex-direction: column;
         }
+
         .new-item {
             background-color: #472424;
             position: relative;
             width: 31.5%;
             @include small {
-                width: 60%; 
                 margin-bottom: 30px;
+                width: 60%;
             }
+
             img {
                 width: 100%;
             }
