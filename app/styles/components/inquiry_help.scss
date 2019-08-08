@@ -1,0 +1,46 @@
+.help {
+    background-color: $pink;
+    padding: 70px 0;
+    @include small {
+        padding: 40px 0;
+    }
+
+    .inner-help {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        @include small {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .block-question {
+        padding-left: 90px;
+        position: relative;
+        &::before {
+            background: url('../images/icon-letter.png');
+            content: '';
+            height: 42px;
+            left: 0;
+            position: absolute;
+            top: 10px;
+            width: 60px;
+        }
+
+        .question {
+            padding-bottom: 10px;
+            @include font($font-family: $font_bd, $size: 30px);
+            text-transform: uppercase;
+        }
+    }
+
+    .btn-help {
+        @include btn-style;
+        background-color: $light-bg;
+        @include small {
+            margin-top: 40px;
+        }
+    }
+}
