@@ -1,53 +1,61 @@
-.facts  {
+.facts {
     background-color: $light-bg;
     padding: 45px 0;
     text-align: center;
     @include small {
         padding: 45px 0 5px 0;
     }
+
     @include medium {
         padding: 45px 0 5px 0;
     }
+
     .facts-block {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
+        justify-content: space-between;
         @include small {
             justify-content: center;
         }
+
         @include medium {
             justify-content: center;
         }
+
         .facts-item {
-            width: 11%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             line-height: 1.5;
+            width: 11%;
             @include small {
-                width: 36%;
                 padding-bottom: 40px;
+                width: 36%;
             }
+
             @include medium {
-                width: 30%;
                 padding-bottom: 50px;
+                width: 30%;
             }
         }
     }
+
     .icon {
         margin-bottom: 20px;
         img {
-        max-width: 33%;
+            max-width: 33%;
         }
     }
+
     .facts-text {
         @include small {
+            margin: 0 auto;
             width: 70%;
-            margin: 0 auto;
         }
+
         @include medium {
-            width: 50%;
             margin: 0 auto;
+            width: 50%;
         }
     }
 }
