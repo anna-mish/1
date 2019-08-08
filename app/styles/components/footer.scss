@@ -1,0 +1,11 @@
+.footer {
+    background-color: $light-bg;
+    .block-links {
+        border-top: 1px solid rgba(255,255,255,.20px);
+        border-bottom: 1px solid rgba(255,255,255,.20px);
+        padding: 100px 0;
+    }
+    .social {
+        min-height: 100px;
+    }
+}
