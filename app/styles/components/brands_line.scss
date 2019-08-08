@@ -1,0 +1,13 @@
+.brands_line {
+    .inner_cont { 
+        display: flex; 
+        justify-content: space-around;
+        padding: 65px 0 100px 0;
+    }
+    .brand {
+        max-width: 16.66%;
+        img {
+            max-width: 100%;
+        }
+    }
+}
