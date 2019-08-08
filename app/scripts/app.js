@@ -1,6 +1,6 @@
 import $ from './libs/jquery';
 
-const onPageLoaded = () => {
+const onPageLoaded = () => { 
     function initTabs(mainContainer, tabsContainer) {
         const CONTENT_ITEM = `${mainContainer} >  div`;
         const CONTENT_ITEM_FIRST = `${mainContainer} >  div:first`;
@@ -24,6 +24,9 @@ const onPageLoaded = () => {
     };
 
     initTabs('#content','#tabs');
+    initTabs('#user-content','#user-tabs');
+
+
 };
 
 
