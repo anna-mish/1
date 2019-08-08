@@ -1,0 +1,61 @@
+.facts {
+    background-color: $light-bg;
+    padding: 45px 0;
+    text-align: center;
+    @include small {
+        padding: 45px 0 5px 0;
+    }
+
+    @include medium {
+        padding: 45px 0 5px 0;
+    }
+
+    .facts-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include small {
+            justify-content: center;
+        }
+
+        @include medium {
+            justify-content: center;
+        }
+
+        .facts-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            line-height: 1.5;
+            width: 11%;
+            @include small {
+                padding-bottom: 40px;
+                width: 36%;
+            }
+
+            @include medium {
+                padding-bottom: 50px;
+                width: 30%;
+            }
+        }
+    }
+
+    .icon {
+        margin-bottom: 20px;
+        img {
+            max-width: 33%;
+        }
+    }
+
+    .facts-text {
+        @include small {
+            margin: 0 auto;
+            width: 70%;
+        }
+
+        @include medium {
+            margin: 0 auto;
+            width: 50%;
+        }
+    }
+}
