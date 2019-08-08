@@ -1,0 +1,125 @@
+.footer {
+    background-color: $light-bg;
+    .block-links {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2px);
+        border-top: 1px solid rgba(255, 255, 255, 0.2px);
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0;
+        @include small {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include medium {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .us-сontact {
+        line-height: 1.7;
+        padding-left: 75px;
+        position: relative;
+    }
+
+    .item-contact {
+        padding-bottom: 20px;
+    }
+
+    .contact-details,
+    .subtitle {
+        text-transform: uppercase;
+        @include font($font-family: $font_bd, $color: $pink);
+    }
+
+    .item-contact:last-child {
+        padding-bottom: 0;
+        @include small {
+            padding-bottom: 60px;
+        }
+
+        @include medium {
+            padding-bottom: 60px;
+        }
+    }
+
+    .item-contact:before {
+        content: '';
+        display: block;
+        height: 55px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 55px;
+    }
+
+    .call:before {
+        content: '';
+        background: url('../images/icon-contact-call.png') center no-repeat
+            $pink;
+        top: 0;
+    }
+
+    .email:before {
+        content: '';
+        background: url('../images/icon-contact-mail.png') center no-repeat
+            $pink;
+        top: 75px;
+    }
+
+    .address:before {
+        content: '';
+        background: url('../images/icon-contact-address.png') center no-repeat
+            $pink;
+        top: 150px;
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+        width: 65%;
+        line-height: 2;
+        @include small {
+            text-align: center;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        @include medium {
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+
+    .social {
+        min-height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include small {
+            flex-direction: column;
+            justify-content: space-around;
+            min-height: 220px;
+            padding: 40px 0;
+        }
+        @include medium {
+            flex-direction: column;
+            justify-content: space-around;
+            min-height: 220px;
+            padding: 40px 0;
+        }
+    }
+
+    .logo {
+        background: url('../images/logo.png') center no-repeat;
+        height: 27px;
+        width: 190px;
+    }
+    .soc-links {
+        display: flex;
+        .soc {
+            padding: 0 10px;
+        } 
+    }
+}

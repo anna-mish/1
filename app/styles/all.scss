@@ -3,6 +3,7 @@
 @import 'global/fonts';
 @import 'global/mixin';
 @import 'global/breakpoints';
+@import 'global/style-icons';
 
 @import 'components/global-style-site';
 @import 'components/header';
@@ -12,5 +13,6 @@
 @import 'components/brands_line';
 @import 'components/testimonials';
 @import 'components/latest-news';
-@import 'components/inquiry_help';
+@import 'components/inquiry_help'; 
 @import 'components/facts';
+@import 'components/footer';
