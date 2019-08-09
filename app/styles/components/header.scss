@@ -3,15 +3,24 @@
         background: $dark-bg;
         .top-block {
             align-items: center;
-            display: flex;
+            display: flex; 
             font-size: $fs-small;
             justify-content: space-between;
+            @include small {
+                flex-direction: column;
+            }
         }
+
+       
+        
     }
 
     .support {
         display: flex;
         flex-direction: row;
+        @include small {
+            padding: 20px 0 30px 0;
+        }
         li {
             padding: 0 20px;
             a:hover {
@@ -27,10 +36,17 @@
     .users {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: center; 
+         @include small {
+             background-color: $title;
+             border: 1px solid $text;
+            margin-bottom: 30px;
+        }
+         
         a {
             border-left: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 18px 20px;
+            padding: 18px 20px; 
+           
             &:hover {
                 background-color: $pink;
             }
@@ -41,6 +57,7 @@
         border-left: 0;
         padding: 18px 20px 18px 42px;
         position: relative;
+        
         &:before {
             background: url('../images/my-goods.png') 0 0;
             content: '';
@@ -49,7 +66,7 @@
             position: absolute;
             top: 13px;
             width: 20px;
-        }
+        } 
 
         span {
             color: #dcc5b8;
@@ -63,25 +80,58 @@
             align-items: center;
             display: flex;
             justify-content: space-between;
+            @include small {
+                flex-direction: column;
+                padding-top: 20px;
+            }
         }
     }
 
     .logo {
         background: url('../images/logo.png') center no-repeat;
         height: 27px;
-        width: 17%;
+        width: 190px;
+        @include small {
+            padding: 30px 0 ;
+        }
     }
 
-    .menu {
+    // .menu {
+    //     display: flex;
+    //     flex-direction: row;
+    //     a {
+    //         border-bottom: 4px solid $light-bg;
+    //         padding: 27px 20px;
+    //         &:hover {
+    //             border-bottom: 4px solid $pink;
+    //             color: $pink;
+    //         }
+    //     }
+    // }
+
+        .main-menu {
         display: flex;
         flex-direction: row;
+        @include small {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
         a {
+            
             border-bottom: 4px solid $light-bg;
-            padding: 27px 20px;
+            padding: 27px 20px; 
+            @include small {
+                width: 25%;
+                padding: 20px 10px; 
+                text-align: center;
+            }
             &:hover {
                 border-bottom: 4px solid $pink;
                 color: $pink;
+                transition: .5s ease all;
             }
         }
     }
+    
 }

@@ -1,6 +1,9 @@
 .banner {
     background-color: #f0efee;
     padding-top: 135px;
+    @include small {
+        display: none;
+    }
     .arrival {
         display: flex;
         justify-content: flex-end;
@@ -11,6 +14,7 @@
         margin-top: -175px;
         padding-right: 70px;
         width: 86%;
+       
     }
 
     .text-banner {
