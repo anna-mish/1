@@ -1,12 +1,21 @@
 .brands_line {
     .inner_cont {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;  
+        text-align: center;
         padding: 65px 0 100px 0;
+        @include small {
+            flex-wrap: wrap;  
+            padding: 50px 0 50px 0;
+        }
     }
 
     .brand {
-        max-width: 16.66%;
+        width: 16.66%;
+        @include small {
+            width: 30%;
+            padding-bottom: 40px;
+        }
         img {
             max-width: 100%;
         }
