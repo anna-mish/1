@@ -3,11 +3,30 @@
     .in-offerrs {
         display: flex;
         height: 540px;
-        justify-content: space-between;
+        justify-content: space-between; 
+        @include small {
+            flex-direction: column;
+        }
+
         .left-side {
-            background: url('../images/left-side_bg.png');
+            background: url('../images/left-side_bg.png') center no-repeat/cover;
             position: relative;
             width: 48.6%;
+            @include small {
+                margin: 0 auto 30px; 
+                min-width: 80%;
+            }
+
+            &:before {
+                background: url('../images/bg-nike_part.png');
+                content: '';
+                height: 55px;
+                left: -12px;
+                position: absolute;
+                top: 226px;
+                width: 29px;
+            }
+
             .logo_small {
                 left: 20px;
                 position: absolute;
@@ -16,6 +35,7 @@
             }
 
             .left-side-top {
+                padding-bottom: 44px;
                 text-align: center;
                 h3 {
                     @include font($size: 30px);
@@ -34,28 +54,43 @@
             }
         }
 
-        .left-side:before {
-            background: url('../images/bg-nike_part.png');
-            content: '';
-            height: 55px;
-            left: -12px;
-            position: absolute;
-            top: 226px;
-            width: 29px;
-        }
-
         .right-side {
             display: flex;
             flex-direction: column;
             width: 48.6%;
+            @include small {
+                margin: 0 auto 30px;
+                width: 80%;
+
+            }
+
             .new-arrivals {
                 background-color: $pink;
                 height: 47.3%;
                 margin-bottom: 30px;
+                padding-bottom: 30px;
                 padding-left: 150px;
                 position: relative;
                 text-align: center;
                 width: 100%;
+                @include small {
+                    padding-left: 0;
+                }
+
+                &:before {
+                    background: url('../images/arrivals-element.png');
+                    content: '';
+                    display: block;
+                    height: 277px;
+                    left: -15px;
+                    position: absolute;
+                    top: -22px;
+                    width: 207px;
+                    @include small {
+                        display: none;
+                    }
+                }
+
                 h3 {
                     @include font($size: 30px);
                     padding: 55px 0 25px;
@@ -70,27 +105,18 @@
                 }
             }
 
-            .new-arrivals:before {
-                background: url('../images/arrivals-element.png');
-                content: '';
-                height: 277px;
-                left: -15px;
-                position: absolute;
-                top: -22px;
-                width: 207px;
-            }
-
             .small-blocks {
                 color: $text;
                 display: flex;
                 height: 47.3%;
                 justify-content: space-between;
                 .for-athletes {
-                    background: url('../images/athletes-bg.png');
-                    width: 47.3%;
+                    background: url('../images/athletes-bg.png') center no-repeat/cover;
+                    width: 47.3%; 
+                    // padding-bottom: 40px;
                     @include font($size: 30px);
                     h3 {
-                        padding-top: 145px;
+                        padding: 145px 0 40px 0;
                         text-align: center;
                         span {
                             @include span;
@@ -100,11 +126,11 @@
                 }
 
                 .premium {
-                    background: url('../images/premium-bg.png') 0 0 no-repeat;
+                    background: url('../images/premium-bg.png') center no-repeat/cover;
                     width: 47.3%;
                     @include font($size: 30px, $color: #6b7072);
                     h3 {
-                        padding-top: 40px;
+                        padding: 40px 0 145px 0;
                         text-align: center;
                         span {
                             @include span;
