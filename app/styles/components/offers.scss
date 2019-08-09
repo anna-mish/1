@@ -2,11 +2,15 @@
     padding: 50px 0 95px 0;
     .in-offerrs {
         display: flex;
-        height: 540px;
+        max-height: 540px;
         justify-content: space-between; 
         @include small {
             flex-direction: column;
         }
+        @include medium {
+            max-height: 440px;
+        }
+
 
         .left-side {
             background: url('../images/left-side_bg.png') center no-repeat/cover;
@@ -15,8 +19,8 @@
             @include small {
                 margin: 0 auto 30px; 
                 min-width: 80%;
-            }
-
+            } 
+           
             &:before {
                 background: url('../images/bg-nike_part.png');
                 content: '';
@@ -25,6 +29,9 @@
                 position: absolute;
                 top: 226px;
                 width: 29px;
+                @include medium {
+                   display: none;
+                }
             }
 
             .logo_small {
@@ -45,6 +52,9 @@
                         @include span;
                         color: #4bd8cd;
                     }
+                    @include medium {
+                        padding:  45px 0 240px 0;
+                     }
                 }
 
                 .btn {
@@ -76,6 +86,9 @@
                 @include small {
                     padding-left: 0;
                 }
+                @include medium {
+                    padding-left: 0;
+                }
 
                 &:before {
                     background: url('../images/arrivals-element.png');
@@ -89,6 +102,9 @@
                     @include small {
                         display: none;
                     }
+                    @include medium {
+                        display: none;
+                     }
                 }
 
                 h3 {
@@ -97,6 +113,9 @@
                     span {
                         @include span;
                     }
+                    @include medium {
+                        padding: 35px 0 25px;
+                     }
                 }
 
                 .btn {
@@ -122,6 +141,9 @@
                             @include span;
                             color: $pink;
                         }
+                        @include medium {
+                            padding:  98px 0 40px 0;
+                         }
                     }
                 }
 
@@ -136,6 +158,9 @@
                             @include span;
                             color: $text;
                         }
+                        @include medium {
+                            padding:  40px 0 98px 0;
+                         }
                     }
                 }
             }

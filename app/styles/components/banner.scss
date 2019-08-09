@@ -1,6 +1,9 @@
 .banner {
     background-color: #f0efee;
     padding-top: 135px;
+    @include medium {
+        padding: 35px 0;
+    }
     @include small {
         display: none;
     }
@@ -14,11 +17,20 @@
         margin-left: -535px;
         margin-top: -175px;
         padding-right: 70px;
-        width: 86%;
+        max-width: 86%;
+        @include medium {
+            display: none;
+        }
     }
 
     .text-banner {
         width: 47%;
+        @include medium{
+            width: 100%;
+            text-align: center;
+        }
+      
+        
         span {
             color: $light-bg;
             display: block;

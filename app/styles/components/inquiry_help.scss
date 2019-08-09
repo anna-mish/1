@@ -9,10 +9,12 @@
         align-items: center;
         display: flex;
         justify-content: space-between;
-        @include small {
-            align-items: center;
+        @include small { 
             display: flex;
             flex-direction: column;
+        }
+        @include medium { 
+            justify-content: space-around;
         }
     }
 
