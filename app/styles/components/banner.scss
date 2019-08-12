@@ -16,8 +16,8 @@
     .bg-banner {
         margin-left: -535px;
         margin-top: -175px;
-        padding-right: 70px;
         max-width: 86%;
+        padding-right: 70px;
         @include medium {
             display: none;
         }
@@ -25,12 +25,11 @@
 
     .text-banner {
         width: 47%;
-        @include medium{
-            width: 100%;
+        @include medium {
             text-align: center;
+            width: 100%;
         }
-      
-        
+
         span {
             color: $light-bg;
             display: block;

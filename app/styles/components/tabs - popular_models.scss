@@ -1,4 +1,4 @@
-.popular_models { 
+.popular_models {
     #tabs {
         display: flex;
         justify-content: center;
@@ -42,12 +42,19 @@
             padding: 25px;
             position: relative;
             width: 23%;
+            @include small {
+                padding: 10px;
+                text-align: center;
+            }
             .price {
                 left: 25px;
                 line-height: 1.5;
                 position: absolute;
                 @include font($size: 24px, $color: $pink);
                 top: 25px;
+                @include small { 
+                    left: 10px;
+                }
             }
 
             .sale-price {
@@ -57,6 +64,9 @@
                 text-decoration: line-through;
                 @include font($color: $title);
                 top: 60px;
+                @include small { 
+                    left: 15px;
+                }
             }
 
             .discount {
@@ -66,6 +76,9 @@
                 right: 0;
                 @include font($font-family: $font_bd);
                 top: 20px;
+                @include small {
+                    top: 180px;
+                }
             }
 
             .sneakers-pic {
@@ -76,6 +89,9 @@
                 text-align: center;
                 img {
                     max-width: 100%;
+                }
+                @include small {
+                    padding-top: 70px;
                 }
             }
 

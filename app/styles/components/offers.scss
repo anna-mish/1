@@ -1,26 +1,24 @@
 .offers {
     padding: 50px 0 95px 0;
+    @include small {
+        padding: 50px 0 30px 0;
+    }
     .in-offerrs {
         display: flex;
-        max-height: 540px;
         justify-content: space-between; 
         @include small {
             flex-direction: column;
         }
-        @include medium {
-            max-height: 440px;
-        }
-
 
         .left-side {
             background: url('../images/left-side_bg.png') center no-repeat/cover;
             position: relative;
             width: 48.6%;
             @include small {
-                margin: 0 auto 30px; 
+                margin: 0 auto 30px;
                 min-width: 80%;
-            } 
-           
+            }
+
             &:before {
                 background: url('../images/bg-nike_part.png');
                 content: '';
@@ -30,7 +28,7 @@
                 top: 226px;
                 width: 29px;
                 @include medium {
-                   display: none;
+                    display: none;
                 }
             }
 
@@ -52,9 +50,10 @@
                         @include span;
                         color: #4bd8cd;
                     }
+
                     @include medium {
-                        padding:  45px 0 240px 0;
-                     }
+                        padding: 45px 0 240px 0;
+                    }
                 }
 
                 .btn {
@@ -71,7 +70,6 @@
             @include small {
                 margin: 0 auto 30px;
                 width: 80%;
-
             }
 
             .new-arrivals {
@@ -86,6 +84,7 @@
                 @include small {
                     padding-left: 0;
                 }
+
                 @include medium {
                     padding-left: 0;
                 }
@@ -102,9 +101,10 @@
                     @include small {
                         display: none;
                     }
+
                     @include medium {
                         display: none;
-                     }
+                    }
                 }
 
                 h3 {
@@ -113,9 +113,10 @@
                     span {
                         @include span;
                     }
+
                     @include medium {
                         padding: 35px 0 25px;
-                     }
+                    }
                 }
 
                 .btn {
@@ -127,12 +128,11 @@
             .small-blocks {
                 color: $text;
                 display: flex;
-                height: 47.3%;
                 justify-content: space-between;
                 .for-athletes {
-                    background: url('../images/athletes-bg.png') center no-repeat/cover;
-                    width: 47.3%; 
-                    // padding-bottom: 40px;
+                    background: url('../images/athletes-bg.png') center
+                        no-repeat/cover;
+                    width: 47.3%;
                     @include font($size: 30px);
                     h3 {
                         padding: 145px 0 40px 0;
@@ -141,14 +141,16 @@
                             @include span;
                             color: $pink;
                         }
+
                         @include medium {
-                            padding:  98px 0 40px 0;
-                         }
+                            padding: 98px 0 40px 0;
+                        }
                     }
                 }
 
                 .premium {
-                    background: url('../images/premium-bg.png') center no-repeat/cover;
+                    background: url('../images/premium-bg.png') center
+                        no-repeat/cover;
                     width: 47.3%;
                     @include font($size: 30px, $color: #6b7072);
                     h3 {
@@ -158,9 +160,10 @@
                             @include span;
                             color: $text;
                         }
+
                         @include medium {
-                            padding:  40px 0 98px 0;
-                         }
+                            padding: 40px 0 98px 0;
+                        }
                     }
                 }
             }
