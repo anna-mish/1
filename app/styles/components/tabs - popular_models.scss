@@ -9,7 +9,7 @@
             padding: 0 20px;
             text-transform: uppercase;
             @include font(
-                $font-family: $font_lt,
+                $font-family: $font_bd,
                 $size: 30px,
                 $color: $subtitle
             );
@@ -17,7 +17,7 @@
             @at-root #tabs .current a,
                 &:hover {
                 color: $light-bg;
-                font-family: $font_bd;
+                // font-family: $font_bd;
             }
         }
     }
@@ -46,13 +46,14 @@
                 padding: 10px;
                 text-align: center;
             }
+
             .price {
                 left: 25px;
                 line-height: 1.5;
                 position: absolute;
                 @include font($size: 24px, $color: $pink);
                 top: 25px;
-                @include small { 
+                @include small {
                     left: 10px;
                 }
             }
@@ -64,7 +65,7 @@
                 text-decoration: line-through;
                 @include font($color: $title);
                 top: 60px;
-                @include small { 
+                @include small {
                     left: 15px;
                 }
             }
@@ -90,6 +91,7 @@
                 img {
                     max-width: 100%;
                 }
+
                 @include small {
                     padding-top: 70px;
                 }

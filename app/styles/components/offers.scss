@@ -3,9 +3,10 @@
     @include small {
         padding: 50px 0 30px 0;
     }
+
     .in-offerrs {
         display: flex;
-        justify-content: space-between; 
+        justify-content: space-between;
         @include small {
             flex-direction: column;
         }
